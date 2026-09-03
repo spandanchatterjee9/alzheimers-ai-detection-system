@@ -1,0 +1,37 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Large Datasets & Raw Neuroimaging Scans
+dataset/
+ADNI2/
+ADNI3/
+ADNI4/
+temp_test/
+*.nii
+*.nii.gz
+*.dcm
+*.npy
+
+# Large Zip Archives (Exceeds GitHub 100MB limit)
+*.zip
+*.tar.gz
+*.7z
+
+# Model Checkpoints (Heavy binary weights)
+*.pt
+*.pth
+*.onnx
+models/checkpoints/*.pt
+
+# Temporary Office Lock files & OS artifacts
+~$*
+.DS_Store
+Thumbs.db
+
+# Logs & Virtual Environments
+logs/
+venv/
+.env

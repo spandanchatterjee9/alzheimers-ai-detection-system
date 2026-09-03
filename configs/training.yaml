@@ -1,0 +1,48 @@
+# ==============================================================================
+# Alzheimer's Disease 2D Deep Learning Training Configuration
+# Model: 2D EfficientNet-B0 (Grayscale Axial 224x224 MRI Slices)
+# Task: 4-Class CDR Classification with Patient-Level Mean Aggregation
+# ==============================================================================
+
+# Model Architecture
+model: "densenet121"
+pretrained: true
+in_channels: 1
+num_classes: 3
+image_size: 224
+dropout_rate: 0.3
+
+# Data Plane & Resolution
+axis: "axial"
+train_csv: "dataset/manifests/joint_train.csv"
+val_csv: "dataset/manifests/joint_validation.csv"
+test_csv: "dataset/manifests/joint_test.csv"
+checkpoint_dir: "models/checkpoints"
+
+# Training Hyperparameters (Baseline)
+epochs: 15
+batch_size: 32
+learning_rate: 0.0001
+weight_decay: 0.01
+optimizer: "adamw"
+scheduler: "cosine"
+mixed_precision: true
+use_class_weights: true
+num_workers: 2
+random_seed: 42
+device: "auto"  # 'auto', 'cuda', or 'cpu'
+
+# Early Stopping & Evaluation
+early_stopping:
+  enabled: true
+  patience: 5
+  min_delta: 0.001
+  monitor: "val_patient_accuracy"
+
+# Class Mapping Definition (3-Class Clinical Formulation)
+class_mapping:
+  0.0: 0  # Cognitively Normal (CN)
+  0.5: 1  # Very Mild Dementia / MCI
+  1.0: 2  # Mild / Moderate Dementia (AD)
+  2.0: 2  # Mild / Moderate Dementia (AD)
+
