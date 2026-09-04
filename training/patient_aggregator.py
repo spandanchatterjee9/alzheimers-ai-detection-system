@@ -53,7 +53,6 @@ def aggregate_slice_probabilities(
         patient_prob = np.mean(probs_np, axis=0)
     elif method == "median":
         patient_prob = np.median(probs_np, axis=0)
-        # Re-normalize to sum to 1
         s = np.sum(patient_prob)
         if s > 0:
             patient_prob = patient_prob / s
@@ -62,6 +61,25 @@ def aggregate_slice_probabilities(
         s = np.sum(patient_prob)
         if s > 0:
             patient_prob = patient_prob / s
+    elif method == "diagnostic_gaussian":
+        # Anatomical Gaussian centered at 52% brain depth (medial temporal lobe / hippocampus)
+        N = probs_np.shape[0]
+        weights = np.array([
+            max(np.exp(-((i / max(N, 1) - 0.52) ** 2) / (2 * (0.18 ** 2))), 0.15)
+            for i in range(N)
+        ], dtype=np.float32)[:, None]
+        patient_prob = np.sum(probs_np * weights, axis=0) / np.sum(weights)
+    elif method == "calibrated_mci":
+        # Gaussian depth weighting + gentle calibrated MCI decision threshold prior (+0.05)
+        N = probs_np.shape[0]
+        weights = np.array([
+            max(np.exp(-((i / max(N, 1) - 0.52) ** 2) / (2 * (0.18 ** 2))), 0.15)
+            for i in range(N)
+        ], dtype=np.float32)[:, None]
+        patient_prob = np.sum(probs_np * weights, axis=0) / np.sum(weights)
+        if len(patient_prob) >= 2:
+            patient_prob[1] += 0.05
+            patient_prob = patient_prob / np.sum(patient_prob)
     else:
         patient_prob = np.mean(probs_np, axis=0)
 
