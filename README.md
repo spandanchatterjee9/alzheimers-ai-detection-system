@@ -131,20 +131,155 @@ flowchart TD
 
 ---
 
+## 🧬 Multimodal Vision-Language Architecture with Dynamic Gating (Phase 2)
+
+While the pure 2D CNN vision baseline achieved a robust **76.00% blind test accuracy** (and 100% sensitivity on severe AD), morphological differentiation between **Mild Cognitive Impairment (MCI, CDR 0.5)** and **Healthy Aging (CN, CDR 0.0)** presents sub-millimeter visual overlap on structural MRI alone. 
+
+To break this ceiling, our Phase 2 architecture introduces a **Multimodal Vision-Language Architecture with Dynamic Gating** that mirrors authentic hospital multidisciplinary consults:
+
+```
+                  ┌─────────────────────────────────────────────────────────┐
+                  │                 CLINICAL INPUT MODALITIES               │
+                  └────────────┬───────────────────────────────┬────────────┘
+                               │                               │
+                [ 3D MRI Volume (.nii) ]        [ Clinical Intake: Age, Sex, MMSE ]
+                               │                               │
+                               ▼                               ▼
+                     2D Axial Preprocessing        Clinical Report Synthesizer
+                     (Ventricles & Hippocampus)   (Standardized Neurological Note)
+                               │                               │
+                               ▼                               ▼
+                      Vision Model (.pt)            Text Transformer (.pt)
+                    (Multi-Kernel ResNet-18)           (Bio_ClinicalBERT)
+                               │                               │
+                     [ Flattening Layer ]                      │
+                   torch.flatten(avgpool, 1)                   │
+                               │                               │
+                               ▼                               ▼
+                     1D Vision Vector (512)          1D Text Vector (768)
+                               │                               │
+                               └───────────────┬───────────────┘
+                                               │
+                                               ▼
+                              ┌─────────────────────────────────┐
+                              │      DYNAMIC GATING NETWORK     │
+                              │          ("The Chooser")        │
+                              │   g = Sigmoid( W·[v; t] + b )   │
+                              └────────────────┬────────────────┘
+                                               │
+                               Learned Dynamic Prioritization:
+                               • W_vision = g
+                               • W_text   = (1 - g)
+                                               │
+                                               ▼
+                              ┌─────────────────────────────────┐
+                              │        BLENDED LATENT SPACE     │
+                              │    h = g·v_proj + (1-g)·t_proj  │
+                              └────────────────┬────────────────┘
+                                               │
+                                               ▼
+                              ┌─────────────────────────────────┐
+                              │     TOP CLASSIFICATION HEAD     │
+                              │  🎯 Final CDR Stage (CN/MCI/AD) │
+                              └─────────────────────────────────┘
+```
+
+### Key Architectural Components
+
+1. **The Flattening Layer (2D Spatial Grid $\to$ 1D Vector)**:
+   - Deep inside ResNet-18, MRI slice features reside in a 2D spatial grid: $(\text{Batch}, 512, 7, 7)$.
+   - Global average pooling followed by `torch.flatten(x, 1)` collapses the spatial grid into a pure **512-dimensional 1D visual vector ($W_I$)**, matching the dimensional space required for fusion with text embeddings.
+
+2. **The Clinical Text Branch (`Bio_ClinicalBERT`)**:
+   - Hospital patient intake metrics (Age, Sex, MMSE score) and derived structural biomarkers (Normalized Whole Brain Volume $nWBV$, Estimated Total Intracranial Volume $eTIV$) are deterministically compiled into standardized consultation reports.
+   - Fine-tuned `Bio_ClinicalBERT` tokenizes and projects the narrative into a **768-dimensional 1D text vector ($W_T$)**.
+
+3. **The Dynamic Gating Network ("The Chooser")**:
+   - Rather than static concatenation, a gating sub-network dynamically evaluates the confidence of both modalities for each unique patient:
+     $$g = \sigma\left(W_g [v_{\text{vision}}; t_{\text{text}}] + b_g\right) \in [0.0, 1.0]$$
+   - **Definitive Scan (Clear AD / CN):** $g \approx 0.85$ (*High visual confidence, trusts MRI scan*).
+   - **Borderline / Ambiguous Scan (Early MCI):** $g \approx 0.25$ (*Visual atrophy overlaps with normal aging; gate automatically prioritizes MMSE cognitive score and clinical history to resolve the ambiguity*).
+
+---
+
+## 🩺 Real-World Clinical Inference: Doctor's Input & Output Workflow
+
+In clinical deployment, attending physicians and radiologists interact with a frictionless two-step input interface:
+
+### 1. The Inputs Provided by the Doctor
+* **Input 1 (Imaging):** Standard 3D structural MRI acquisition (`.nii`, `.nii.gz`, or `.dcm`) uploaded directly from the PACS/scanner.
+* **Input 2 (Minimal Clinical Intake):**
+  * Patient Name / ID (e.g., `John Doe / P-1042`)
+  * Age (e.g., `74`)
+  * Biological Sex (e.g., `Male`)
+  * Mini-Mental State Exam (MMSE) Score (e.g., `24/30`) or brief cognitive notes.
+
+### 2. Automated Internal Inference Execution
+1. **Imaging Preprocessing**: `nibabel` loads the `.nii` volume, performs RAS+ coordinate reorientation, intensity standardization, and extracts informative axial slices through the ventricles and hippocampus.
+2. **Vision Feature Extraction**: Pre-trained ResNet-18 processes slices through its flattening layer into a 512-dim visual vector ($W_I$) and generates slice-level Grad-CAM heatmaps.
+3. **Automated Clinical Report Synthesis**: System auto-computes whole-brain parenchymal fraction ($nWBV$) from the `.nii` and compiles minimal intake into a structured clinical note.
+4. **Text Representation**: `Bio_ClinicalBERT` embeds the synthesized note into a 768-dim text vector ($W_T$).
+5. **Dynamic Gating & Staging**: The top gating model computes the dynamic gate weight $g$, blends the vectors, and outputs the final CDR staging.
+
+### 3. The Formatted Diagnostic Output Report (Delivered to the Doctor)
+
+```
+====================================================================================
+🏥 NEUROSCREEN AI — MULTIMODAL CLINICAL DIAGNOSTIC REPORT
+====================================================================================
+Patient Name: John Doe                  Patient ID: P-1042
+Age: 74 | Sex: Male                     Clinical Intake: MMSE 24/30
+Uploaded Acquisition: patient_mri_3t.nii (T1-weighted MPRAGE, 3.0 Tesla)
+
+------------------------------------------------------------------------------------
+🎯 PRIMARY DIAGNOSTIC PREDICTION:
+   ▶ Mild Cognitive Impairment (MCI) [CDR = 0.5]
+   Overall Model Confidence: 89.2%
+------------------------------------------------------------------------------------
+
+📊 MULTIMODAL DECISION BREAKDOWN (Explainability & Transparency):
+   • Vision Branch (MRI Scan):          78.4% Confidence (MCI)
+   • Clinical Text Branch (Intake):     92.1% Confidence (MCI)
+   • Dynamic Gate Weight Allocation:    68% Vision Weight (g=0.68) | 32% Clinical Text Weight (1-g=0.32)
+
+🧠 COMPUTED NEUROLOGICAL BIOMARKERS:
+   • Normalized Whole Brain Volume (nWBV):  0.718 (Indicates Moderate Cortical Thinning)
+   • Estimated Total Intracranial Volume:  1485 cm³
+   • Lateral Ventricular Dilation:         Moderate Bilateral Enlargement
+   • Medial Temporal Lobe Atrophy (MTA):    Score 2 (Early Hippocampal Volume Reduction)
+
+🖼️ VISUAL EXPLAINABILITY (Grad-CAM Activation):
+   • Peak Activation Focus: Medial Temporal Lobe & Bilateral Hippocampal Formations
+   • Slice Focus: Axial Slices 14–20 displaying concentrated warm-color activations
+     identifying focal parenchymal atrophy distinct from standard senescent changes.
+
+📋 CLINICAL RECOMMENDATION:
+   Patient exhibits neurocognitive and morphological indicators consistent with 
+   amnestic Mild Cognitive Impairment (aMCI). Recommended for repeat MMSE cognitive 
+   screening and follow-up volumetric MRI surveillance in 6 months.
+====================================================================================
+```
+
+---
+
 ## 🏆 Master Model Leaderboard & Empirical Benchmarks
 
 To ensure absolute scientific rigor and eliminate scanner overfitting, all models were evaluated on **two completely separate patient holdout cohorts (104 total unseen patients)**:
 
 | Rank | Model Architecture | Primary Test (50 Pts) | Secondary Test (54 Pts) | Dual-Cohort Combined (104 Pts) | Macro F1 | Clinical Characteristics |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- |
-| 🥇 | **Focal Multi-Scale ResNet-18 + MLP** | **76.00% (38/50)** 🏆 | **79.63% (43/54)** ⭐ | **77.88% (81/104)** 🔥 | **0.6778** | **ALL-TIME BEST**: 0 false negatives on severe AD, 50% MCI recall, balanced sensitivity across all 3 classes. |
-| 🥈 | **Multimodal ResNet-18 v2** | 62.00% (31/50) | **74.07% (40/54)** | 68.27% (71/104) | 0.4951 | Robust handling of missing cognitive exams ($has\_mmse$). |
-| 🥉 | **Multimodal ResNet-18 v1** | **70.00% (35/50)** | **70.37% (38/54)** | 70.19% (73/104) | 0.5403 | Exceptional stability across both splits (96.4% CN Recall). |
-| 4 | **Pure Vision EfficientNet-B0** | 60.00% (30/50) | 54.84% (29/54) | 56.73% (59/104) | 0.6125 | 100% sensitivity on severe AD, but sensitive to contrast noise. |
-| 5 | **DenseNet-121** | 50.00% (25/50) | 70.97% (38/54) | 60.58% (63/104) | 0.4765 | High MCI recall, but high false-positive rate on healthy brains. |
-| 6 | **ImageNet Pretrained ResNet-50** | 50.00% (25/50) | 62.96% (34/54) | 56.73% (59/104) | 0.3275 | Over-parameterized (25.5M params); natural image weights overfit. |
-| 7 | **Swin Vision Transformer (Swin-T)** | 46.00% (23/50) | 61.11% (33/54) | 53.85% (56/104) | 0.3630 | Lacks spatial inductive bias needed for 1-channel grayscale MRI. |
-| 8 | **Legacy 4-Class ResNet-18** | 24.00% (12/50) | 67.74% (36/54) | 46.15% (48/104) | 0.1290 | Softmax gradients destabilized by severe class imbalance. |
+| 🥇 | **Multimodal Dynamic Gating (Vision + PubMedBERT)** 🚀 | **80.00% (40/50)** 🏆 | **75.93% (41/54)** | **77.88% (81/104)** 🔥 | **0.7120** | **ALL-TIME BEST MULTIMODAL**: 8-epoch cosine fine-tuned PubMedBERT with Attention-Weighted Mean Pooling (74.0% standalone) dynamically balanced with 512-dim ResNet vision features ($g=0.532 \pm 0.192$). True synergistic Late-Fusion across modalities. |
+| 🥈 | **Dual-Expert Soft-Voting Ensemble (Vision + Gated)** | **78.00% (39/50)** | **75.93% (41/54)** | **76.92% (80/104)** | **0.6950** | Probability ensemble of pure vision expert + multimodal gated model. |
+| 🥉 | **Focal Multi-Scale ResNet-18 + MLP** | **76.00% (38/50)** | **79.63% (43/54)** ⭐ | **77.88% (81/104)** | **0.6778** | **BEST PURE VISION**: 0 false negatives on severe AD, 50% MCI recall, balanced sensitivity across all 3 classes. |
+| 4 | **Standalone PubMedBERT (Text Only)** 🌟 | **74.00% (37/50)** | **64.81% (35/54)** | **69.23% (72/104)** | **0.6540** | **+14.0% TEXT JUMP**: Biomedical abstract full-text pretraining + attention-weighted mean pooling across clinical narratives without MRI pixels. |
+| 5 | **Multimodal ResNet-18 v1** | **70.00% (35/50)** | **70.37% (38/54)** | 70.19% (73/104) | 0.5403 | Exceptional stability across both splits (96.4% CN Recall). |
+| 6 | **Multimodal ResNet-18 v2** | 62.00% (31/50) | **74.07% (40/54)** | 68.27% (71/104) | 0.4951 | Robust handling of missing cognitive exams ($has\_mmse$). |
+| 7 | **Standalone Bio_ClinicalBERT (Legacy Text)** | 60.00% (30/50) | 59.26% (32/54) | 59.62% (62/104) | 0.5120 | Legacy [CLS]-token pooled text model trained on ICU discharge summaries. |
+| 8 | **Pure Vision EfficientNet-B0** | 60.00% (30/50) | 54.84% (29/54) | 56.73% (59/104) | 0.6125 | 100% sensitivity on severe AD, but sensitive to contrast noise. |
+| 9 | **DenseNet-121** | 50.00% (25/50) | 70.97% (38/54) | 60.58% (63/104) | 0.4765 | High MCI recall, but high false-positive rate on healthy brains. |
+| 10 | **ImageNet Pretrained ResNet-50** | 50.00% (25/50) | 62.96% (34/54) | 56.73% (59/104) | 0.3275 | Over-parameterized (25.5M params); natural image weights overfit. |
+| 11 | **Swin Vision Transformer (Swin-T)** | 46.00% (23/50) | 61.11% (33/54) | 53.85% (56/104) | 0.3630 | Lacks spatial inductive bias needed for 1-channel grayscale MRI. |
+| 12 | **Legacy 4-Class ResNet-18** | 24.00% (12/50) | 67.74% (36/54) | 46.15% (48/104) | 0.1290 | Softmax gradients destabilized by severe class imbalance. |
 
 ---
 

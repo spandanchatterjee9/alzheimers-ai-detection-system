@@ -1,0 +1,451 @@
+patient_id,short_id,age,gender,CDR,label_3class,label_name,MMSE,nwbv,etiv,dataset_source,clinical_report
+OAS1_0011_MR1,OAS1_0011,52.0,Female,0.0,0,CN,30.0,0.827,1321.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0011_MR1 | Protocol: OASIS-1
+Patient Demographics: 52-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Ventricles are non-dilated with preserved contours; frontal and temporal horns are sharp and well-defined.
+Medial Temporal & Hippocampal Status: Normal hippocampal volume bilaterally without focal atrophy; parahippocampal gyri are intact.
+Cortical Mantle & Sulcal Pattern: Preserved cortical mantle thickness without focal gyral thinning or sulcal prominence; gray-white matter differentiation is sharp and distinct.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.827 | Total Intracranial Volume: 1321 cm3.
+Summary Impression: Structural brain MRI demonstrates preserved intracranial parenchyma without focal neurodegeneration."
+OAS1_0423_MR1,OAS1_0423,75.0,Male,0.0,0,CN,28.0,0.749,1511.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0423_MR1 | Protocol: OASIS-1
+Patient Demographics: 75-year-old male.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Mild cortical thinning with slight accentuation of cerebral sulcal spaces along the high convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.749 | Total Intracranial Volume: 1511 cm3.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+OAS1_0357_MR1,OAS1_0357,55.0,Female,0.0,0,CN,30.0,0.82,1450.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0357_MR1 | Protocol: OASIS-1
+Patient Demographics: 55-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Lateral ventricles and third ventricle demonstrate normal physiological caliber and slit-like configuration without ventriculomegaly.
+Medial Temporal & Hippocampal Status: Normal hippocampal volume bilaterally without focal atrophy; parahippocampal gyri are intact.
+Cortical Mantle & Sulcal Pattern: Preserved cortical mantle thickness without focal gyral thinning or sulcal prominence; gray-white matter differentiation is sharp and distinct.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.820 | Total Intracranial Volume: 1450 cm3.
+Summary Impression: Structural brain MRI demonstrates preserved intracranial parenchyma without focal neurodegeneration."
+OAS1_0343_MR1,OAS1_0343,68.0,Male,0.0,0,CN,30.0,0.811,1441.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0343_MR1 | Protocol: OASIS-1
+Patient Demographics: 68-year-old male.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Ventricles are non-dilated with preserved contours; frontal and temporal horns are sharp and well-defined.
+Medial Temporal & Hippocampal Status: Bilateral medial temporal lobes demonstrate preserved volume. Hippocampal heads, bodies, and tails display normal morphology with no significant widening of the choroid fissures (Scheltens MTA score: 0).
+Cortical Mantle & Sulcal Pattern: Cerebral cortical ribbon demonstrates normal thickness across frontal, temporal, and parietal convexities. Cerebral sulci are non-widened.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.811 | Total Intracranial Volume: 1441 cm3.
+Summary Impression: Structural brain MRI demonstrates preserved intracranial parenchyma without focal neurodegeneration."
+OAS1_0425_MR1,OAS1_0425,78.0,Female,1.0,2,AD,23.0,0.715,1461.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0425_MR1 | Protocol: OASIS-1
+Patient Demographics: 78-year-old female.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 23/30.
+Ventricular Morphology: Moderate ventricular expansion with conspicuous widening of the frontal horns and third ventricular lumen.
+Medial Temporal & Hippocampal Status: Prominent bilateral choroid fissures with distinct volumetric loss of hippocampal parenchymal ribbons.
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.715 | Total Intracranial Volume: 1461 cm3.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+OAS1_0317_MR1,OAS1_0317,86.0,Male,0.0,0,CN,26.0,0.702,1501.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0317_MR1 | Protocol: OASIS-1
+Patient Demographics: 86-year-old male.
+Clinical Referral Indication: Evaluation for subtle episodic memory lapses and word-finding pauses over 6-12 months. Screening MMSE score: 26/30. Basic activities of daily living remain independent.
+Ventricular Morphology: Moderate bilateral symmetrical dilation of the lateral ventricles and prominent third ventricle, exceeding standard age-adjusted baseline.
+Medial Temporal & Hippocampal Status: Prominent bilateral choroid fissures with distinct volumetric loss of hippocampal parenchymal ribbons.
+Cortical Mantle & Sulcal Pattern: Extensive cortical parenchymal loss with pronounced parietal and posterior cingulate sulcal widening.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.702 | Total Intracranial Volume: 1501 cm3.
+Summary Impression: Structural brain MRI demonstrates established bilateral medial temporal and neocortical parenchymal volume loss with ex-vacuo ventriculomegaly."
+OAS1_0023_MR1,OAS1_0023,82.0,Male,0.5,1,MCI,27.0,0.71,1420.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0023_MR1 | Protocol: OASIS-1
+Patient Demographics: 82-year-old male.
+Clinical Referral Indication: Evaluation for subtle episodic memory lapses and word-finding pauses over 6-12 months. Screening MMSE score: 27/30. Basic activities of daily living remain independent.
+Ventricular Morphology: Notable ex-vacuo ventriculomegaly affecting both lateral ventricular bodies and temporal horn recesses.
+Medial Temporal & Hippocampal Status: Moderate bilateral volume reduction of the hippocampal formations with conspicuous widening of the choroid fissures and enlarged temporal horns (Scheltens MTA score: 2).
+Cortical Mantle & Sulcal Pattern: Prominent generalized cortical volume loss with conspicuous sulcal widening and gyral narrowing, predominant in the biparietal and temporal convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.710 | Total Intracranial Volume: 1420 cm3.
+Summary Impression: Structural brain MRI demonstrates established bilateral medial temporal and neocortical parenchymal volume loss with ex-vacuo ventriculomegaly."
+OAS1_0304_MR1,OAS1_0304,84.0,Male,0.5,1,MCI,29.0,0.693,1497.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0304_MR1 | Protocol: OASIS-1
+Patient Demographics: 84-year-old male.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 29/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Moderate ventricular expansion with conspicuous widening of the frontal horns and third ventricular lumen.
+Medial Temporal & Hippocampal Status: Moderate bilateral volume reduction of the hippocampal formations with conspicuous widening of the choroid fissures and enlarged temporal horns (Scheltens MTA score: 2).
+Cortical Mantle & Sulcal Pattern: Diffuse cerebral cortical thinning with marked enlargement of the subarachnoid spaces over both hemispheres and prominent sylvian fissures.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.693 | Total Intracranial Volume: 1497 cm3.
+Summary Impression: Structural brain MRI demonstrates established bilateral medial temporal and neocortical parenchymal volume loss with ex-vacuo ventriculomegaly."
+OAS1_0354_MR1,OAS1_0354,74.0,Male,0.0,0,CN,26.0,0.776,1367.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0354_MR1 | Protocol: OASIS-1
+Patient Demographics: 74-year-old male.
+Clinical Referral Indication: Evaluation for subtle episodic memory lapses and word-finding pauses over 6-12 months. Screening MMSE score: 26/30. Basic activities of daily living remain independent.
+Ventricular Morphology: Lateral ventricles demonstrate mild ex-vacuo expansion with mild blunting of the frontal horns.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Preserved cortical mantle thickness without focal gyral thinning or sulcal prominence; gray-white matter differentiation is sharp and distinct.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.776 | Total Intracranial Volume: 1367 cm3.
+Summary Impression: Structural brain MRI demonstrates preserved intracranial parenchyma without focal neurodegeneration."
+OAS1_0197_MR1,OAS1_0197,89.0,Female,0.0,0,CN,29.0,0.747,1154.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0197_MR1 | Protocol: OASIS-1
+Patient Demographics: 89-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 29/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Lateral ventricles demonstrate mild ex-vacuo expansion with mild blunting of the frontal horns.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Mild cortical thinning with slight accentuation of cerebral sulcal spaces along the high convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.747 | Total Intracranial Volume: 1154 cm3.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+OAS1_0229_MR1,OAS1_0229,55.0,Female,0.0,0,CN,30.0,0.832,1327.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0229_MR1 | Protocol: OASIS-1
+Patient Demographics: 55-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Lateral ventricles and third ventricle demonstrate normal physiological caliber and slit-like configuration without ventriculomegaly.
+Medial Temporal & Hippocampal Status: Hippocampal formations are well-preserved bilaterally. Choroid fissures and temporal horn recesses remain closed and physiological (Scheltens MTA: 0).
+Cortical Mantle & Sulcal Pattern: Preserved cortical mantle thickness without focal gyral thinning or sulcal prominence; gray-white matter differentiation is sharp and distinct.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.832 | Total Intracranial Volume: 1327 cm3.
+Summary Impression: Structural brain MRI demonstrates preserved intracranial parenchyma without focal neurodegeneration."
+OAS1_0329_MR1,OAS1_0329,80.0,Female,0.5,1,MCI,29.0,0.76,1209.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0329_MR1 | Protocol: OASIS-1
+Patient Demographics: 80-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 29/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Lateral ventricles demonstrate mild ex-vacuo expansion with mild blunting of the frontal horns.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.760 | Total Intracranial Volume: 1209 cm3.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+OAS1_0233_MR1,OAS1_0233,77.0,Female,0.5,1,MCI,20.0,0.701,1376.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0233_MR1 | Protocol: OASIS-1
+Patient Demographics: 77-year-old female.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 20/30.
+Ventricular Morphology: Notable ex-vacuo ventriculomegaly affecting both lateral ventricular bodies and temporal horn recesses.
+Medial Temporal & Hippocampal Status: Prominent bilateral choroid fissures with distinct volumetric loss of hippocampal parenchymal ribbons.
+Cortical Mantle & Sulcal Pattern: Diffuse cerebral cortical thinning with marked enlargement of the subarachnoid spaces over both hemispheres and prominent sylvian fissures.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.701 | Total Intracranial Volume: 1376 cm3.
+Summary Impression: Structural brain MRI demonstrates established bilateral medial temporal and neocortical parenchymal volume loss with ex-vacuo ventriculomegaly."
+OAS1_0268_MR1,OAS1_0268,78.0,Male,1.0,2,AD,23.0,0.715,1491.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0268_MR1 | Protocol: OASIS-1
+Patient Demographics: 78-year-old male.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 23/30.
+Ventricular Morphology: Moderate ventricular expansion with conspicuous widening of the frontal horns and third ventricular lumen.
+Medial Temporal & Hippocampal Status: Bilateral medial temporal lobe atrophy is evident, demonstrated by moderate loss of hippocampal height and temporal horn dilatation (Scheltens MTA: 2).
+Cortical Mantle & Sulcal Pattern: Mild diffuse widening of the cerebral sulci, most apparent along the biparietal and superior frontal convexities. Mild sylvian fissure opening.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.715 | Total Intracranial Volume: 1491 cm3.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+OAS1_0207_MR1,OAS1_0207,51.0,Male,0.0,0,CN,29.0,0.819,1714.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0207_MR1 | Protocol: OASIS-1
+Patient Demographics: 51-year-old male.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 29/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Lateral ventricles and third ventricle demonstrate normal physiological caliber and slit-like configuration without ventriculomegaly.
+Medial Temporal & Hippocampal Status: Normal hippocampal volume bilaterally without focal atrophy; parahippocampal gyri are intact.
+Cortical Mantle & Sulcal Pattern: Preserved cortical mantle thickness without focal gyral thinning or sulcal prominence; gray-white matter differentiation is sharp and distinct.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.819 | Total Intracranial Volume: 1714 cm3.
+Summary Impression: Structural brain MRI demonstrates preserved intracranial parenchyma without focal neurodegeneration."
+OAS1_0380_MR1,OAS1_0380,83.0,Female,0.5,1,MCI,18.0,0.705,1313.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0380_MR1 | Protocol: OASIS-1
+Patient Demographics: 83-year-old female.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 18/30.
+Ventricular Morphology: Moderate ventricular expansion with conspicuous widening of the frontal horns and third ventricular lumen.
+Medial Temporal & Hippocampal Status: Prominent bilateral choroid fissures with distinct volumetric loss of hippocampal parenchymal ribbons.
+Cortical Mantle & Sulcal Pattern: Prominent generalized cortical volume loss with conspicuous sulcal widening and gyral narrowing, predominant in the biparietal and temporal convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.705 | Total Intracranial Volume: 1313 cm3.
+Summary Impression: Structural brain MRI demonstrates established bilateral medial temporal and neocortical parenchymal volume loss with ex-vacuo ventriculomegaly."
+OAS1_0256_MR1,OAS1_0256,70.0,Male,0.0,0,CN,30.0,0.739,1660.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0256_MR1 | Protocol: OASIS-1
+Patient Demographics: 70-year-old male.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Mild cortical thinning with slight accentuation of cerebral sulcal spaces along the high convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.739 | Total Intracranial Volume: 1660 cm3.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+OAS1_0447_MR1,OAS1_0447,92.0,Female,0.5,1,MCI,24.0,0.739,1388.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0447_MR1 | Protocol: OASIS-1
+Patient Demographics: 92-year-old female.
+Clinical Referral Indication: Evaluation for subtle episodic memory lapses and word-finding pauses over 6-12 months. Screening MMSE score: 24/30. Basic activities of daily living remain independent.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Mild cortical thinning with slight accentuation of cerebral sulcal spaces along the high convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.739 | Total Intracranial Volume: 1388 cm3.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+OAS1_0073_MR1,OAS1_0073,69.0,Female,1.0,2,AD,21.0,0.655,1495.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0073_MR1 | Protocol: OASIS-1
+Patient Demographics: 69-year-old female.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 21/30.
+Ventricular Morphology: Gross ventricular enlargement secondary to profound loss of periventricular white matter and central brain parenchyma.
+Medial Temporal & Hippocampal Status: Severe bilateral hippocampal and parahippocampal volume loss with pronounced dilatation of the temporal horns and flattened hippocampal heads (Scheltens MTA score: 3).
+Cortical Mantle & Sulcal Pattern: Prominent generalized cortical volume loss with conspicuous sulcal widening and gyral narrowing, predominant in the biparietal and temporal convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.655 | Total Intracranial Volume: 1495 cm3.
+Summary Impression: Structural brain MRI demonstrates established bilateral medial temporal and neocortical parenchymal volume loss with ex-vacuo ventriculomegaly."
+OAS1_0123_MR1,OAS1_0123,83.0,Female,0.5,1,MCI,24.0,0.797,1282.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0123_MR1 | Protocol: OASIS-1
+Patient Demographics: 83-year-old female.
+Clinical Referral Indication: Evaluation for subtle episodic memory lapses and word-finding pauses over 6-12 months. Screening MMSE score: 24/30. Basic activities of daily living remain independent.
+Ventricular Morphology: Ventricular system is within normal limits for age, with symmetrical frontal horns and no hydrocephalic enlargement.
+Medial Temporal & Hippocampal Status: Normal hippocampal volume bilaterally without focal atrophy; parahippocampal gyri are intact.
+Cortical Mantle & Sulcal Pattern: Sulcal and gyral patterns are within normal physiological bounds with no regional cortical atrophy.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.797 | Total Intracranial Volume: 1282 cm3.
+Summary Impression: Structural brain MRI demonstrates preserved intracranial parenchyma without focal neurodegeneration."
+OAS1_0010_MR1,OAS1_0010,74.0,Male,0.0,0,CN,30.0,0.689,1636.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0010_MR1 | Protocol: OASIS-1
+Patient Demographics: 74-year-old male.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Notable ex-vacuo ventriculomegaly affecting both lateral ventricular bodies and temporal horn recesses.
+Medial Temporal & Hippocampal Status: Bilateral medial temporal lobe atrophy is evident, demonstrated by moderate loss of hippocampal height and temporal horn dilatation (Scheltens MTA: 2).
+Cortical Mantle & Sulcal Pattern: Prominent generalized cortical volume loss with conspicuous sulcal widening and gyral narrowing, predominant in the biparietal and temporal convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.689 | Total Intracranial Volume: 1636 cm3.
+Summary Impression: Structural brain MRI demonstrates established bilateral medial temporal and neocortical parenchymal volume loss with ex-vacuo ventriculomegaly."
+OAS1_0404_MR1,OAS1_0404,73.0,Female,0.0,0,CN,29.0,0.776,1465.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0404_MR1 | Protocol: OASIS-1
+Patient Demographics: 73-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 29/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Lateral ventricles demonstrate mild ex-vacuo expansion with mild blunting of the frontal horns.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Sulcal and gyral patterns are within normal physiological bounds with no regional cortical atrophy.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.776 | Total Intracranial Volume: 1465 cm3.
+Summary Impression: Structural brain MRI demonstrates preserved intracranial parenchyma without focal neurodegeneration."
+OAS1_0201_MR1,OAS1_0201,85.0,Female,0.0,0,CN,26.0,0.754,1460.0,OASIS-1,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: OAS1_0201_MR1 | Protocol: OASIS-1
+Patient Demographics: 85-year-old female.
+Clinical Referral Indication: Evaluation for subtle episodic memory lapses and word-finding pauses over 6-12 months. Screening MMSE score: 26/30. Basic activities of daily living remain independent.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.754 | Total Intracranial Volume: 1460 cm3.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+002_S_1018_I40828,002_S_1018,72.0,Unknown,0.0,0,CN,28.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 002_S_1018_I40828 | Protocol: ADNI-1_3T
+Patient Demographics: 72-year-old patient.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Mild diffuse widening of the cerebral sulci, most apparent along the biparietal and superior frontal convexities. Mild sylvian fissure opening.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+002_S_1018_I97022,002_S_1018,72.0,Unknown,0.0,0,CN,28.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 002_S_1018_I97022 | Protocol: ADNI-1_3T
+Patient Demographics: 72-year-old patient.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Borderline hippocampal volume preservation with minimal bilateral temporal horn opening.
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+002_S_1018_I132795,002_S_1018,72.0,Unknown,0.0,0,CN,28.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 002_S_1018_I132795 | Protocol: ADNI-1_3T
+Patient Demographics: 72-year-old patient.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Lateral ventricles demonstrate mild ex-vacuo expansion with mild blunting of the frontal horns.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Mild diffuse widening of the cerebral sulci, most apparent along the biparietal and superior frontal convexities. Mild sylvian fissure opening.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+023_S_0061_I118854,023_S_0061,78.2329,Female,0.0,0,CN,28.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 023_S_0061_I118854 | Protocol: ADNI-1_3T
+Patient Demographics: 78-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Mild diffuse widening of the cerebral sulci, most apparent along the biparietal and superior frontal convexities. Mild sylvian fissure opening.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+023_S_0061_I118858,023_S_0061,78.2329,Female,0.0,0,CN,28.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 023_S_0061_I118858 | Protocol: ADNI-1_3T
+Patient Demographics: 78-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+023_S_0061_I81874,023_S_0061,78.2329,Female,0.0,0,CN,28.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 023_S_0061_I81874 | Protocol: ADNI-1_3T
+Patient Demographics: 78-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Lateral ventricles demonstrate mild ex-vacuo expansion with mild blunting of the frontal horns.
+Medial Temporal & Hippocampal Status: Borderline hippocampal volume preservation with minimal bilateral temporal horn opening.
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+023_S_0061_I87064,023_S_0061,78.2329,Female,0.0,0,CN,28.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 023_S_0061_I87064 | Protocol: ADNI-1_3T
+Patient Demographics: 78-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+126_S_0606_I120575,126_S_0606,70.6384,Female,1.0,2,AD,22.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 126_S_0606_I120575 | Protocol: ADNI-1_3T
+Patient Demographics: 71-year-old female.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 22/30.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+126_S_0606_I38887,126_S_0606,70.6384,Female,1.0,2,AD,22.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 126_S_0606_I38887 | Protocol: ADNI-1_3T
+Patient Demographics: 71-year-old female.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 22/30.
+Ventricular Morphology: Lateral ventricles demonstrate mild ex-vacuo expansion with mild blunting of the frontal horns.
+Medial Temporal & Hippocampal Status: Borderline hippocampal volume preservation with minimal bilateral temporal horn opening.
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+126_S_0606_I72873,126_S_0606,70.6384,Female,1.0,2,AD,22.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 126_S_0606_I72873 | Protocol: ADNI-1_3T
+Patient Demographics: 71-year-old female.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 22/30.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Mild cortical thinning with slight accentuation of cerebral sulcal spaces along the high convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+130_S_0956_I39200,130_S_0956,65.9671,Female,1.0,2,AD,28.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 130_S_0956_I39200 | Protocol: ADNI-1_3T
+Patient Demographics: 66-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Mild cortical thinning with slight accentuation of cerebral sulcal spaces along the high convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+130_S_0956_I82700,130_S_0956,65.9671,Female,1.0,2,AD,28.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 130_S_0956_I82700 | Protocol: ADNI-1_3T
+Patient Demographics: 66-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+130_S_0956_I129655,130_S_0956,65.9671,Female,1.0,2,AD,28.0,,,ADNI-1_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 130_S_0956_I129655 | Protocol: ADNI-1_3T
+Patient Demographics: 66-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 28/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+002_S_1280_I65874,002_S_1280,72.8548,Female,0.0,0,CN,30.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 002_S_1280_I65874 | Protocol: ADNI3_3T
+Patient Demographics: 73-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Borderline hippocampal volume preservation with minimal bilateral temporal horn opening.
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+002_S_1280_I104471,002_S_1280,72.8548,Female,0.0,0,CN,30.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 002_S_1280_I104471 | Protocol: ADNI3_3T
+Patient Demographics: 73-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Borderline hippocampal volume preservation with minimal bilateral temporal horn opening.
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+002_S_1280_I140739,002_S_1280,72.8548,Female,0.0,0,CN,30.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 002_S_1280_I140739 | Protocol: ADNI3_3T
+Patient Demographics: 73-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Borderline hippocampal volume preservation with minimal bilateral temporal horn opening.
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+007_S_1222_I96052,007_S_1222,75.5315,Female,0.0,0,CN,29.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 007_S_1222_I96052 | Protocol: ADNI3_3T
+Patient Demographics: 76-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 29/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Lateral ventricles demonstrate mild ex-vacuo expansion with mild blunting of the frontal horns.
+Medial Temporal & Hippocampal Status: Borderline hippocampal volume preservation with minimal bilateral temporal horn opening.
+Cortical Mantle & Sulcal Pattern: Mild cortical thinning with slight accentuation of cerebral sulcal spaces along the high convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+007_S_1222_I140800,007_S_1222,75.5315,Female,0.0,0,CN,29.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 007_S_1222_I140800 | Protocol: ADNI3_3T
+Patient Demographics: 76-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 29/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+023_S_1190_I118920,023_S_1190,78.6658,Female,0.0,0,CN,30.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 023_S_1190_I118920 | Protocol: ADNI3_3T
+Patient Demographics: 79-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Borderline hippocampal volume preservation with minimal bilateral temporal horn opening.
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+023_S_1190_I88372,023_S_1190,78.6658,Female,0.0,0,CN,30.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 023_S_1190_I88372 | Protocol: ADNI3_3T
+Patient Demographics: 79-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Mild diffuse widening of the cerebral sulci, most apparent along the biparietal and superior frontal convexities. Mild sylvian fissure opening.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+023_S_1190_I138050,023_S_1190,78.6658,Female,0.0,0,CN,30.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 023_S_1190_I138050 | Protocol: ADNI3_3T
+Patient Demographics: 79-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 30/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Bilateral hippocampal formations show mild focal volume loss with slight enlargement of the adjacent CSF clefts (Scheltens MTA: 1).
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+127_S_0844_I82651,127_S_0844,87.4849,Female,1.0,2,AD,22.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 127_S_0844_I82651 | Protocol: ADNI3_3T
+Patient Demographics: 87-year-old female.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 22/30.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Mild diffuse widening of the cerebral sulci, most apparent along the biparietal and superior frontal convexities. Mild sylvian fissure opening.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+127_S_0844_I83521,127_S_0844,87.4849,Female,1.0,2,AD,22.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 127_S_0844_I83521 | Protocol: ADNI3_3T
+Patient Demographics: 87-year-old female.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 22/30.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Mild cortical thinning with slight accentuation of cerebral sulcal spaces along the high convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+127_S_0844_I129629,127_S_0844,87.4849,Female,1.0,2,AD,22.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 127_S_0844_I129629 | Protocol: ADNI3_3T
+Patient Demographics: 87-year-old female.
+Clinical Referral Indication: Evaluation for progressive memory loss, temporal disorientation, and difficulty managing complex daily tasks. Screening MMSE score: 22/30.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+130_S_0449_I81434,130_S_0449,68.8356,Female,0.5,1,MCI,29.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 130_S_0449_I81434 | Protocol: ADNI3_3T
+Patient Demographics: 69-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 29/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Mild cortical thinning with slight accentuation of cerebral sulcal spaces along the high convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+130_S_0449_I82686,130_S_0449,68.8356,Female,0.5,1,MCI,29.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 130_S_0449_I82686 | Protocol: ADNI3_3T
+Patient Demographics: 69-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 29/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Slightly enlarged lateral and third ventricles with minimal ventricular cap volume expansion.
+Medial Temporal & Hippocampal Status: Borderline hippocampal volume preservation with minimal bilateral temporal horn opening.
+Cortical Mantle & Sulcal Pattern: Subtle sulcal widening observed in the parietal lobes with preserved primary motor and sensory cortical thickness.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."
+130_S_0449_I120606,130_S_0449,68.8356,Female,0.5,1,MCI,29.0,,,ADNI3_3T,"NEURORADIOLOGY STRUCTURAL BRAIN MRI REPORT (3D VOLUMETRIC T1-MPRAGE)
+Scan Subject ID: 130_S_0449_I120606 | Protocol: ADNI3_3T
+Patient Demographics: 69-year-old female.
+Clinical Referral Indication: Routine neurological health screening. Screening MMSE score: 29/30. Patient reports preserved memory and intact daily activities.
+Ventricular Morphology: Mild symmetrical dilation of the lateral ventricles and slight prominence of the third ventricle, commensurate with early senescent changes.
+Medial Temporal & Hippocampal Status: Minimal prominence of the choroid fissures bilaterally with slight widening of the temporal horns, consistent with subtle medial temporal volume reduction (Scheltens MTA score: 1).
+Cortical Mantle & Sulcal Pattern: Mild cortical thinning with slight accentuation of cerebral sulcal spaces along the high convexities.
+Automated Volumetric Parameters: Computed Normalized Whole Brain Volume (nWBV) from scan voxels: 0.740 | Total Intracranial Volume: unspecified cranial volume.
+Summary Impression: Structural brain MRI demonstrates mild regional volume reduction consistent with borderline neurodegenerative transition."

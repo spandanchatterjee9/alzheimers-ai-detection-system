@@ -4,34 +4,46 @@ __pycache__/
 *$py.class
 .pytest_cache/
 
-# Large Datasets & Raw Neuroimaging Scans
-dataset/
+# Large Raw Datasets & Medical Neuroimaging Scans
+oasis dataset raw/
+oasis*/
+ADNI*/
 ADNI2/
 ADNI3/
 ADNI4/
+dataset/
 temp_test/
 *.nii
 *.nii.gz
 *.dcm
 *.npy
+*.hdr
+*.img
+*.t4
+*.lst
 
-# Large Zip Archives (Exceeds GitHub 100MB limit)
+# Large Archives & Packages (Exceeds GitHub 100MB limit)
 *.zip
+*.tar
 *.tar.gz
 *.7z
 
-# Model Checkpoints (Heavy binary weights)
+# Model Checkpoints & Large Binaries (Stored in Google Drive)
 *.pt
 *.pth
 *.onnx
-models/checkpoints/*.pt
+*.bin
+models/checkpoints/
 
-# Temporary Office Lock files & OS artifacts
+# OS Artifacts & Temporary Office Lock Files
 ~$*
 .DS_Store
 Thumbs.db
+__MACOSX/
+__MACOSX
 
 # Logs & Virtual Environments
 logs/
 venv/
+env/
 .env
